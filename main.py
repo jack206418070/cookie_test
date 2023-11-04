@@ -6,7 +6,7 @@ app.secret_key = 'your_secret_key'
 @app.route('/set_cookie')
 def set_cookie():
     resp = make_response(redirect('http://sub.shohumask.shop/set_cookie'))
-    resp.set_cookie('sessionid', 'cookie_value', domain='.shohumask.shop', secure=False)
+    resp.set_cookie('sessionid', 'cookie_value', domain='sub.shohumask.shop', secure=False)
     return resp
 
 
